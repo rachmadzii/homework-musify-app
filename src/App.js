@@ -6,11 +6,11 @@ function App() {
   return (
     <div className="container">
       <h1>My Playlist</h1>
-      <div class="cardPlaylist">
+      <div className="cardPlaylist">
         <img src={data.album.images[0].url} alt="ImagePlaylist" />
         <h3>{data.album.name}</h3>
         <p>{data.album.artists[0].name}</p>
-        <button class="btnSelect">Select</button>
+        <button className="btnSelect">Select</button>
       </div>
     </div>
   );
