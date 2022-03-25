@@ -11,6 +11,7 @@ body {
 
 .container h1 {
   margin: 12px 0;
+  text-align: center;
 }
 
 .cardPlaylist {
@@ -30,6 +31,7 @@ body {
 
 .cardPlaylist h3 {
   font-weight: 600;
+  min-height: 58px;
 }
 
 .btnSelect {
@@ -43,4 +45,11 @@ body {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   margin-top: 10px;
+}
+
+.trackList {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
 }
