@@ -76,6 +76,10 @@ p {
   min-height: 58px;
 }
 
+.card-playlist p {
+  text-align: left;
+}
+
 .btn-select {
   width: 100%;
   cursor: pointer;
