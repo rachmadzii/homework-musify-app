@@ -16,6 +16,7 @@ You may also see any lint errors in the console.
 
 ![image](https://user-images.githubusercontent.com/25424598/159550939-b74352d2-4f0d-49e1-849e-379c33979c09.png)
 ![image](https://user-images.githubusercontent.com/25424598/160155900-2ba6a86d-2f12-42dc-b9f3-028bcf2da9de.png)
+![Screenshot 2022-04-01 at 12-12-02 Musify App](https://user-images.githubusercontent.com/25424598/161223120-04d1a179-9da2-4e3d-b766-3b311c822f02.png)
 
 ### `npm test`
 
