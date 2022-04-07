@@ -2,21 +2,25 @@
 
 body {
   background-color: #f6f8fd;
+  padding: 10px 20px 20px;
 }
 
 * {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  padding: 10px 20px 20px;
+hr {
+  border: 1px solid #b7cadb;
+  margin: 30px 0;
 }
 
-.container h1,
-p {
-  margin: 12px 0;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Form */
 .form input,
 textarea {
   border-radius: 5px;
@@ -25,6 +29,7 @@ textarea {
   font-size: 14px;
 }
 
+/* Button */
 .btn {
   padding: 8px 16px;
   border: 0;
@@ -53,12 +58,11 @@ textarea {
   margin: 12px 0;
 }
 
-hr {
-  border: 1px solid #b7cadb;
-  margin: 30px 0;
+/* Form Create Playlist */
+.form-playlist h3 {
+  font-weight: 600;
 }
 
-/* Form Create Playlist */
 .form-playlist .form {
   display: flex;
   flex-direction: column;
