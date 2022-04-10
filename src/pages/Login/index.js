@@ -34,6 +34,8 @@ export default function Login() {
 
   const getSpotifyLinkAuthorize = () => {
     const state = Date.now().toString();
+    
+    // eslint-disable-next-line no-undef
     const clientId = process.env.REACT_APP_API_KEY;  
     
     return `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=${config.RESPONSE_TYPE}&redirect_uri=${config.REDIRECT_URI}&state=${state}&scope=${config.SPOTIFY_SCOPE}`;
