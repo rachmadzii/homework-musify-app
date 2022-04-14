@@ -14,8 +14,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-![image](https://user-images.githubusercontent.com/25424598/161383041-efede915-e254-46f8-a512-96b9143b991c.png)
-![Screenshot 2022-04-01 at 12-12-02 Musify App](https://user-images.githubusercontent.com/25424598/161223120-04d1a179-9da2-4e3d-b766-3b311c822f02.png)
+![Screenshot 2022-04-12 at 18-54-30 Musify App](https://user-images.githubusercontent.com/25424598/163077552-256b975c-9638-4290-a3b9-8ac262fdd2cf.png)
+![Screenshot 2022-04-12 at 18-53-57 Musify App](https://user-images.githubusercontent.com/25424598/163077568-e38bbc70-7ce0-4536-adb6-c6cb6954e407.png)
 
 ### `npm test`
 
