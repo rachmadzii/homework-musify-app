@@ -3,13 +3,12 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import config from '../../utils/config';
 import { getUserProfile } from '../../utils/fetchApi';
-import { login } from '../../utils/authSlice';
-import { Anchor } from '@mantine/core';
+import { login } from '../../redux/authSlice';
 
-export default function Login() {
+const Login: React.FC = () => {
   const dispatch = useDispatch();
   const history = useHistory();
-  
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.hash);
     const accessTokenParams = params.get('#access_token');
@@ -33,13 +32,10 @@ export default function Login() {
     }
   }, []);
 
-  const getSpotifyLinkAuthorize = () => {
+  const getSpotifyLinkAuthorize: () => string = () => {
     const state = Date.now().toString();
-    
-    // eslint-disable-next-line no-undef
-    const clientId = process.env.REACT_APP_API_KEY;  
-    
-    return `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=${config.RESPONSE_TYPE}&redirect_uri=${config.REDIRECT_URI}&state=${state}&scope=${config.SPOTIFY_SCOPE}`;
+
+    return `${config.SPOTIFY_AUTH_URL}?client_id=${config.API_URL}&response_type=${config.RESPONSE_TYPE}&redirect_uri=${config.REDIRECT_URI}&state=${state}&scope=${config.SPOTIFY_SCOPE}`;
   };
 
   return (
@@ -47,9 +43,11 @@ export default function Login() {
       <p>
         Before using <b>Musify App</b>, please login to Spotify here.
       </p>
-      <Anchor href={getSpotifyLinkAuthorize()} color="green" radius="md" size="md" uppercase>
+      <a href={getSpotifyLinkAuthorize()} className="btn btn-primary">
         LOGIN
-      </Anchor>
+      </a>
     </div>
   );
-}
+};
+
+export default Login;
