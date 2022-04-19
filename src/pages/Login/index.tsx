@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import config from '../../utils/config';
-import { getUserProfile } from '../../utils/fetchApi';
+import { getUserProfile } from '../../utils/fetchAPI';
 import { login } from '../../redux/authSlice';
 
 const Login: React.FC = () => {

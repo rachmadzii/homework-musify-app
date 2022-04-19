@@ -107,24 +107,24 @@ textarea {
   margin: 20px 0;
 }
 
-.card-playlist {
+.card-track {
   width: 200px;
   border-radius: 8px;
   padding: 14px;
   background-color: #201F1F;
 }
 
-.card-playlist:hover {
+.card-track:hover {
   transition: all 0.1s ease-out; 
   background-color: #282828;
 }
 
-.card-playlist .card-info {
+.card-track .card-info {
   display: flex;
   flex-direction: column;
 }
 
-.card-playlist img {
+.card-track img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -139,7 +139,7 @@ h4 {
   margin: 12px 0;
 }
 
-.card-playlist .card-info p {
+.card-track .card-info p {
   font-size: 14px;
   color: #B5B5B5;
   margin: 0;
